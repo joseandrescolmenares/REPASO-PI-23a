@@ -9,7 +9,8 @@ const characterApi = async () => {
             id: el.id,
             name: el.name,
             origen: el.origin.name,
-            image: el.image
+            image: el.image,
+            episode: el.episode
         }
     })
 

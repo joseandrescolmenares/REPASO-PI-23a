@@ -4,6 +4,9 @@ const {characterID} =require("../controllers/character_Id")
 const router = Router();
 
 
-router.get("/character/:id", (req, res) =>{
-
+router.get("/character/:id", async (req, res) =>{
+    const {id} = req.params
+    res.status(200).send(await characterID(id));
 })
+
+module.exports = router;
